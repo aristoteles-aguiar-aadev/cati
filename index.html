@@ -16,9 +16,6 @@
             <img src="./assest/img/logoUnimed.png">
         </div>
 
-        <div class="header-title">
-            CATI - Cadastro de Ativos
-        </div>
     </header>
 
     <main>
@@ -31,193 +28,203 @@
             <label>Saida</label>
             <br>
 
-            <input type="button" name="new-assest" value="OK" onclick class="btOK" >
-            <br>
         </div>
 
 
         <div class="center-interface">
+            <div class="header-title">
+                <h1>CATI - Cadastro de Ativos</h1>
+            </div>
+
             <form>
-                <label>
-                    Codigo
-                </label>
-                <br>
-                <input type="number" name="numero">
-                
+                <div class="form-group1">
+                    <label class="codigo">
+                        Codigo
+                    </label>
 
-                <label>
-                    Tombo/Série
-                </label>
-                <br>
-                <input type="text" name="tombo">
-                <br>
+                    <input type="number" name="numero" class="inputCodigo">
 
-                <label>
-                    HostName
-                </label>
-                
-                <input type="text" name="hostname">
-                
+                    <label class="ticket">
+                        Ticket
+                    </label>
 
-                <label>
-                    Ingressado no Dominio
-                </label>
-                
-                <select id="dominio" name="dominio">
-                    <option value="yes">Sim</option>
-                    <option value="not">Não</option>
-                </select>
-                
+                    <input type="text" name="ticket" class="inputTicket">
 
-                <label>
-                    Sistema Operacional
-                </label>
-                
-                <select id="so" name="operacional">
-                    <option value="win7">Windows 7</option>
-                    <option value="win8">Windows 8</option>
-                    <option value="win10">Windows 10</option>
-                    <option value="win11">Windows 11</option>
-                    <option value="winsrv">Windows Server</option>
-                    <option value="lin">Linux</option>
-                    <option value="mac">Mac iOS</option>
-                </select>
-                
+                    <label class="tombo">
+                        Tombo/Série
+                    </label>
 
-                <label>
-                    Instalado o SO
-                </label>
-                
-                <select id="insSO" name="insSO">
-                    <option value="yes">Sim</option>
-                    <option value="not">Não</option>
-                </select>
-                
+                    <input type="text" name="tombo" class="inputTombo">
 
-                <label>
-                    Atualizado SO
-                </label>
-                
-                <select id="atualSO" name="atualSO">
-                    <option value="yes">Sim</option>
-                    <option value="not">Não</option>
-                </select>
-                
 
-                <label>
-                    Setor do Usuário
-                </label>
-                
-                <select id="setorUsuario" name="setorUsuario">
-                    <option>Atenção Primaria</option>
-                    <option>Atendimento</option>
-                    <option>Comercial</option>
-                    <option>Vendas</option>
-                    <option>Gestão de Pessoas</option>
-                    <option>Administração</option>
-                    <option>AIS/SAD</option>
-                    <option>Tecnologia da Informação</option>
-                    <option>Rel. Empresarial</option>
-                    <option>Inovações</option>
-                    <option>Financeiro</option>
-                    <option>Contabilidade</option>
-                    <option>Cadastro</option>
-                    <option>APS</option>
-                    <option>Ouvidoria</option>
-                    <option>Rede Assistencial</option>
-                    <option>Central de Atendimento</option>
-                    <option>CSPAR</option>
-                    <option>Auditoria e Regulação</option>
-                    <option>Diretoria</option>
-                    <option>Gerencia</option>
-                </select>
-                
+                    <label>
+                        Hostname
+                    </label>
 
-                <label>Unidade de Destino</label>
-                
-                <select>
-                    <option>Unimed Federação</option>
-                    <option>Unimed Nordeste</option>
-                    <option>Unimed Sobral</option>
-                    <option>Unimed Cariri</option>
-                    <option>Unimed Vale</option>
-                    <option>Unimed Centro Sul</option>
-                    <option>Unimed Crateus</option>
-                </select>
-                
+                    <input type="text" name="hostname">
+                </div>
 
-                <label>
-                    Descrição do Equipamento / Modelo
-                </label>
-                
-                <input type="text" name="equipamento" placeholder="Digite aqui a descrição">
-                
+                <div class="form-group2">
+                    <label>
+                        Ingressado no Dominio
+                    </label>
+                    <br>
+                    <select id="dominio" name="dominio" class="dom">
+                        <option value="yes">Sim</option>
+                        <option value="not">Não</option>
+                    </select>
+                    <br>
 
-                <label>
-                    Acessórios
-                </label>
-                
-                <input type="text" name="acessorios" placeholder="Digite o nome do acessorios">
-                
+                    <label>
+                        Sistema Operacional
+                    </label>
+                    <br>
+                    <select id="so" name="operacional">
+                        <option value="win7">Windows 7</option>
+                        <option value="win8">Windows 8</option>
+                        <option value="win10">Windows 10</option>
+                        <option value="win11">Windows 11</option>
+                        <option value="winsrv">Windows Server</option>
+                        <option value="lin">Linux</option>
+                        <option value="mac">Mac iOS</option>
+                    </select>
+                    <br>
 
-                <label>
-                    Fornecedor
-                </label>
-                
-                <input type="text" name="fornecedor" placeholder="Digite o nome do Fornecedor">
-                
+                    <label>
+                        Instalado o SO
+                    </label>
+                    <br>
+                    <select id="insSO" name="insSO">
+                        <option value="yes">Sim</option>
+                        <option value="not">Não</option>
+                    </select>
+                    <br>
 
-                <label>
-                    Usuário
-                </label>
-                
-                <input type="text" name="usuario" placeholder="Digite o nome do usuario">
-                
+                    <label>
+                        Atualizado SO
+                    </label>
+                    <br>
+                    <select id="atualSO" name="atualSO">
+                        <option value="yes">Sim</option>
+                        <option value="not">Não</option>
+                    </select>
+                    <br>
 
-                
-                <label>
-                    Usuário Administrador
-                </label>
-                
-                <input type="text" name="usuarioAdmin" placeholder="Digite o nome do administrador local">
-                
+                    <label>
+                        Setor do Usuário
+                    </label>
+                    <br>
+                    <select id="setorUsuario" name="setorUsuario">
+                        <option>Atenção Primaria</option>
+                        <option>Atendimento</option>
+                        <option>Comercial</option>
+                        <option>Vendas</option>
+                        <option>Gestão de Pessoas</option>
+                        <option>Administração</option>
+                        <option>AIS/SAD</option>
+                        <option>Tecnologia da Informação</option>
+                        <option>Rel. Empresarial</option>
+                        <option>Inovações</option>
+                        <option>Financeiro</option>
+                        <option>Contabilidade</option>
+                        <option>Cadastro</option>
+                        <option>APS</option>
+                        <option>Ouvidoria</option>
+                        <option>Rede Assistencial</option>
+                        <option>Central de Atendimento</option>
+                        <option>CSPAR</option>
+                        <option>Auditoria e Regulação</option>
+                        <option>Diretoria</option>
+                        <option>Gerencia</option>
+                    </select>
 
-                <label>
-                    Tecnico Responsavel
-                </label>
-                
-                <select id="tecnico" name="tecnico">
-                    <option value="aa">Aristoteles Aguiar</option>
-                    <option value="ds">Diego Souza</option>
-                    <option value="jb">Jonatas Barroso</option>
-                    <option value="lm">Larissa Magalhães</option>
-                </select>
-                
+                    <br>
+                    <label>Unidade de Destino</label>
+                    <br>
+                    <select>
+                        <option>Unimed Federação</option>
+                        <option>Unimed Nordeste</option>
+                        <option>Unimed Sobral</option>
+                        <option>Unimed Cariri</option>
+                        <option>Unimed Vale</option>
+                        <option>Unimed Centro Sul</option>
+                        <option>Unimed Crateus</option>
+                    </select>
 
-                <label>
-                    Data
-                </label>
-                
-                <input type="date">
-                
+                </div>
+                <div class="form-group3">
+                    <label>
+                        Descrição do Equipamento / Modelo
+                    </label>
 
-                <label for="obs">
-                    Observações
-                </label>
-                
-                <textarea id="obs" name="obd" rows="4" cols="50"></textarea>
-                <br>
+                    <input type="text" name="equipamento" placeholder="Digite aqui a descrição">
 
-                <input type="submit">
 
-                <input type="reset">
+                    <label>
+                        Acessórios
+                    </label>
+
+                    <input type="text" name="acessorios" placeholder="Digite o nome do acessorios">
+
+
+                    <label>
+                        Fornecedor / Origem
+                    </label>
+
+                    <input type="text" name="fornecedor" placeholder="Digite o nome do Fornecedor">
+
+
+                    <label>
+                        Usuário
+                    </label>
+
+                    <input type="text" name="usuario" placeholder="Digite o nome do usuario">
+
+
+
+                    <label>
+                        Usuário Administrador
+                    </label>
+
+                    <input type="text" name="usuarioAdmin" placeholder="Digite o nome do administrador local">
+
+
+                    <label>
+                        Tecnico Responsavel
+                    </label>
+                    
+                    <select id="tecnico" name="tecnico">
+                        <option value="aa">Aristoteles Aguiar</option>
+                        <option value="ds">Diego Souza</option>
+                        <option value="jb">Jonatas Barroso</option>
+                        <option value="lm">Larissa Magalhães</option>
+                    </select>
+
+                    
+                    <label>
+                        Data
+                    </label>
+                    
+                    <input type="date">
+
+                    
+                    <label for="obs">
+                        Observações
+                    </label>
+                    
+                    <textarea id="obs" name="obs" rows="5" cols="80"></textarea>
+                                        
+                    <input type="submit" value=" Salvar ">
+                    
+                    <input type="reset" value=" Redefinir ">
+                </div>
             </form>
         </div>
     </main>
 
     <flooter>
         <div class="flooter">
-
+            <h4>Unimed Ceará - 2022 - Todos os direitos reservados</h4>
         </div>
     </flooter>
 </body>
