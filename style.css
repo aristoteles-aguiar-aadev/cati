@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+}
+
+.header-logo {
+    margin: 10px 30px;
+    
+}
+
+.header-title {
+    margin: 30px 30px;
+    font-size: 24px;
+    color: #00995d;
+    
+}
+
+.left-interface {
+
+    display: block;
+    margin: 30px;
+    margin-top: 30px;
+    top: 80px;
+    padding:10px;
+    width: 11vw;
+    height: 30vh;
+    position: absolute;
+    background-color:rgb(240, 231, 231);
+    border-radius: 10px;
+
+}
+
+.left-interface label {
+    margin: 10px;
+    text-align: center;
+}
+
+.left-interface input {
+    margin: 15px 0 0 25px;
+    text-align: center;
+}
+
+.btOK {
+    width: 80px;
+    height: 30px;
+    margin: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color:gainsboro;
+}
+
+/*-----------------div LATERAL CENTRO------------*/
+
+.center-interface {
+    background-color:aquamarine;
+    width: 90vh;
+    height: auto;
+    position: relative;
+    align-items:center;
+    margin: 10px;
+    padding: 30px;
+    left: 30%;
+}
+
