@@ -5,92 +5,125 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
+.header-logo {
+    margin: 80px;
+    box-shadow: black;
+}
+
+.field {
+    border: none;
+    
+
+}
+
+.field1 {
+    width: 100px;
+    border: 0;
+    margin-left: 4.5em;
+    display: inline-block;
+    flex-direction:column;
+
+}
+
+.field2 {
+    width: 100px;
+    border: 0;
+   
+    display: inline-block;
+    flex-direction:row;
+
+}
+
+
+#titulo {
+    color: #00995d;
+    margin:2% 0 1% 7%;
+}
+
+#subtitulo {
+    color: #00995d;
+    margin-left: 13%;
+    padding-bottom: 5% ;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: sans-serif;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.campo {
+    margin-left: 5%;
+    margin-bottom: 1em;
+}
+
+.campo label {
+
+    margin-bottom: 0.3em;
+    color: grey;
     display: flex;
 }
 
-.header-logo {
-    margin: 10px 30px;
-
-}
-
-
-.left-interface {
-
-    display: inline;
-    margin: 0 30px 0 30px;
-    margin-top: 10rem;
-    top: 80px;
-    width: 15vw;
-    height: 30vh;
-    position: absolute;
-    border-radius: 10px;
-
-}
-
-.left-interface label {
-    margin: 10px;
-    text-align: center;
-}
-
-.left-interface input {
-    margin: 15px 0 0 25px;
-    text-align: center;
-}
-
-.btOK {
-    width: 80px;
-    height: 30px;
-    margin: 40px;
-    border-radius: 10px;
-    border: none;
-    background-color: grey;
-}
-
-/*-----------------div LATERAL CENTRO------------*/
-
-.center-interface {
+.grupo .campo {
+    float: left;
+    margin-right: 1em;
     
-    width: 55vw;
-    height: 95vh;
-    margin: 10px;
-    padding: 30px;
-    left: 20%;
-    font-size: 14px;
+
+}
+
+.campo input[type="text"],
+.campo input[type="number"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+ .campo select option {
+    padding-right: 1em;
+ }
+
+ .campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+.botao  {
+    margin: 10px 0 0 60px;
+    font-size: 1.2em;
+    background:#00995d;
+    border: 0;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     position: relative;
     display: inline-block;
-    background-color: aqua;
+    transform: translate(-50%, -50%)
 }
 
-.header-title {
-    text-align: center;
-    font-size: 12px;
-    color: fffffff;
-    margin: 0 0 20px 0;
-     
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
 }
 
-.inputCodigo {
-    width: 5em;
+/* Elementos de classe botão e de tag <select> */
+.botao {
+    cursor: pointer;
 }
-
-.inputTicket {
-
-    width: 10em;
-}
-
-
-.inputTombo {
-
-    width: 20em;
-}
-
-
-
-
 
 .flooter {
+    padding: 30px;
+    width: 100vw;
+    height: 3vh;
+    background:#00995d;
+    color: white;
     text-align: center;
-    font-size: 8px;
-    margin: 10px;
+    
 }
