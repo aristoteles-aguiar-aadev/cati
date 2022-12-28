@@ -26,18 +26,18 @@
 
             <fieldset class="field">
 
-                <div class="campo">
+                <div class="entry">
 
                     <label>
-                        <input type="radio" name="entry-assest">
+                        <input type="radio" name="entry-assest" class="entryInput">
                     </label>
                     <label>Entrada</label>
                 </div>
 
-                <div class="campo">
+                <div class="entry">
 
                     <label>
-                        <input type="radio" name="exit-assest">
+                        <input type="radio" name="exit-assest" class="entryInput">
                     </label>
                     <label>Saida</label>
 
@@ -102,7 +102,7 @@
                                 Equipamento / Modelo
                             </label>
 
-                            <input type="text" name="equipamento" placeholder="Digite aqui a descrição">
+                            <input class="equipamento" type="text" name="equipamento" placeholder="Digite aqui a descrição">
 
                         </div>
 
@@ -211,27 +211,29 @@
                             </label>
 
                             <select id="setorUsuario" name="setorUsuario">
+                                <option>Administração</option>
                                 <option>Atenção Primaria</option>
                                 <option>Atendimento</option>
-                                <option>Comercial</option>
-                                <option>Vendas</option>
-                                <option>Gestão de Pessoas</option>
-                                <option>Administração</option>
                                 <option>AIS/SAD</option>
-                                <option>Tecnologia da Informação</option>
-                                <option>Rel. Empresarial</option>
-                                <option>Inovações</option>
-                                <option>Financeiro</option>
-                                <option>Contabilidade</option>
-                                <option>Cadastro</option>
-                                <option>APS</option>
-                                <option>Ouvidoria</option>
-                                <option>Rede Assistencial</option>
-                                <option>Central de Atendimento</option>
-                                <option>CSPAR</option>
                                 <option>Auditoria e Regulação</option>
+                                <option>Cadastro</option>
+                                <option>Central de Atendimento</option>
+                                <option>Comercial</option>
+                                <option>Contabilidade</option>
+                                <option>Contas Medicas</option>
+                                <option>CSPAR</option>
                                 <option>Diretoria</option>
+                                <option>Financeiro</option>
                                 <option>Gerencia</option>
+                                <option>Gestão de Pessoas</option>
+                                <option>Juridico</option>
+                                <option>NANS</option>
+                                <option>Ouvidoria</option>
+                                <option>Inovações</option>
+                                <option>Rede Assistencial</option>
+                                <option>Relacionamento Empresarial</option>
+                                <option>Tecnologia da Informação</option>
+                                <option>Vendas</option>
                             </select>
 
                         </div>
@@ -240,13 +242,17 @@
                             <label>Unidade de Destino</label>
 
                             <select>
-                                <option>Unimed Federação</option>
-                                <option>Unimed Nordeste</option>
-                                <option>Unimed Sobral</option>
+                                <option>Unimed Ceará</option>
+                                <option>Unimed Abolição</option>
+                                <option>Unimed Aracati</option>
                                 <option>Unimed Cariri</option>
-                                <option>Unimed Vale</option>
                                 <option>Unimed Centro Sul</option>
                                 <option>Unimed Crateus</option>
+                                <option>Unimed Nordeste</option>
+                                <option>Unimed Sertao Central</option>
+                                <option>Unimed Sobral</option>
+                                <option>Unimed Vale do Jaguaribe</option>
+                                <option>CSPAR</option>
                             </select>
 
                         </div>
@@ -261,7 +267,7 @@
                     </fieldset>
 
                     <div class="campo">
-                        <label>
+                        <label class="observacaoTextArea">
                             Observações
                         </label>
 
