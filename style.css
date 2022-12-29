@@ -5,19 +5,32 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 .header-logo {
-    margin: 80px;
+    padding: 2%;
     box-shadow: black;
+    background: #00995d;
+    width: 100vw;
+
+}
+
+.container {
+    display: inline-block;
+    width: 100%;
+    height: 70%;
+    background: #f2f3f4;
+
 }
 
 .field {
-    
+    margin-top: 20px;
     border: none;
-    display:flex;  
-    
+    display: flex;
+
 }
+
 .entry input {
-    margin:0 0 30px 60px;
+    margin: 0 0 30px 60px;
     display: inline;
     width: 30px;
 }
@@ -27,7 +40,7 @@
     border: 0;
     margin-left: 4em;
     display: inline-block;
-    flex-direction:column;
+    flex-direction: column;
 
 }
 
@@ -48,7 +61,7 @@
     width: 5em;
 }
 
-.hostname{
+.hostname {
 
     width: 5em;
 }
@@ -59,7 +72,7 @@
     top: 200px;
     border: 0;
     display: inline-block;
-    flex-direction:row;
+    flex-direction: row;
 
 }
 
@@ -71,14 +84,14 @@
 
 #titulo {
     color: #00995d;
-    margin:2% 0 1% 5%;
+    margin: 2% 0 1% 5%;
 }
 
 #subtitulo {
     color: #00995d;
     margin-left: 13%;
-    padding-bottom: 1% ;
-    
+    padding-bottom: 1%;
+
 }
 
 
@@ -106,7 +119,7 @@ button {
 
 .grupo .campo {
     float: left;
-   
+
 
 }
 
@@ -120,36 +133,40 @@ button {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     display: flex;
 }
- .campo select option {
-    padding-right: 1em;
- }
 
- .campo input:focus, .campo select:focus, .campo textarea:focus {
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
     background: #E0E0F8;
 }
 
 input {
-    
+
     width: 500px;
 
 }
 
-.campo textarea, .observacaoTextArea {
+.campo textarea,
+.observacaoTextArea {
     margin-left: 19px;
 }
 
 
-.botao  {
+.botao {
     width: auto;
     margin: 10px 0 0 60%;
     top: -102px;
     font-size: 1.2em;
-    background:#00995d;
+    background: #00995d;
     border: 0;
     color: white;
     padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     position: relative;
     display: inline-block;
     transform: translate(-50%, -50%)
@@ -158,7 +175,7 @@ input {
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .botao:hover {
     background: #CCBBFF;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }
 
@@ -168,12 +185,12 @@ input {
 }
 
 
-.flooter {
+footer {
     padding: 30px;
     width: 98.8vw;
     height: 3vh;
-    background:#00995d;
+    background: #00995d;
     color: white;
     text-align: center;
-    
+
 }
