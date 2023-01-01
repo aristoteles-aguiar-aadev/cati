@@ -4,107 +4,95 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .retangulo-logo {
     background: #00995d;
-    width: 100vw;
+    width: auto;
     height: 20vh;
 }
-
 .header-logo {
     padding: 26px;
 
 }
-
 .container {
     display: inline-block;
-    width: 100vw;
+    width: 98.7vw;
     height: auto;
     background: #e8eff5;
 
 }
-
 .masterContainer {
     align-items: center;
     background: rgba(181, 167, 181, 0.2);
     border-radius: 20px;
     box-shadow: 10px 10px 5px 0px rgba(173, 162, 162, 0.75);
-    width: 90vw;
-    height: 95vh;
+    width: 80vw;
+    height: 90vh;
     margin: 50px auto 50px;
     padding: 20px;
-
-
 }
-
-.field {
-    margin: 2em 0 0.5em 5em;
-    width: 25em;
+.field .entrada, .saida {
     border: none;
-    display: flex;
-
-
+    display: inline-flex;
+    margin: 2em 0 2em 7em;
+    width: 12.5em;
 }
-
-.entry input {
-    margin: 0 0 30px 60px;
-    display: inline;
-    width: 30px;
+#titulo {
+    color: #00995d;
+    margin-left: 7em;
+    font-size: 25px;
+    padding: 0;
 }
-
-
+input{
+ width:30em;
+}
 .field1 {
     border: 0;
-    margin-left: 3em;
-    display: inline-block;
-    flex-direction: column;
+    background: ;
+    display:inline-flex;
+    flex-direction:column;
     position: relative;
-
+    width: 50%;
 }
-
 .inputCodigo {
-
     width: 5em;
 }
-
 .inputTicket {
 
-    width: 5em;
+    width: 8em;
 }
-
 .inputTombo {
 
-    width: 5em;
+    width: 8em;
 }
-
-.hostname {
-
-    width: 5em;
+.inputHostname {
+    width: 12em;
 }
-
+.userUseradmin {
+    width: 14.5em;   
+}
+.treeclass {
+    display: inline-flex;
+    width:20em;
+    margin-left: 0.5em;
+}
+.treeclass1 {
+    display: inline-flex;
+    width:40em;
+}
+#dominio, #insSO, #atualSO {
+    width: 5.3em;
+}
 .field2 {
-
-    border: 0;
-    margin-left: 4em;
+    border: none;
     display: inline-block;
     flex-direction: column;
-    background: ;
-    position: absolute;
-
-
+    position:absolute;
+    width: 20vw;
+    margin-left: 1em;
 }
 
 .campo [type="date"] {
-
-    width: 60%;
-}
-
-
-#titulo {
-    color: #00995d;
-    margin-left: 6em;
-    font-size: 25px;
-    padding: 0;
+    width: 20%;
 }
 
 input,
@@ -153,25 +141,25 @@ button {
     background: #E0E0F8;
 }
 
-input {
 
-    width: 500px;
-
+#so, #tecnico, .setorUsuario, .unDestino {
+    width:20em;
 }
 
 .campo textarea,
 .observacaoTextArea {
     position: relative;
-    margin-left: 6em;
-    margin-bottom: 2em;
+    margin-left: -1.8em;
+    width: 30em;
 
 }
 
 .btn-master {
     display:inline-block;
     position: absolute;
-    margin-top: -6.3em;
-    margin-left:65rem;
+    margin-top: -5.5em;
+    margin-left: 45rem;
+    
     
 
 }
@@ -208,7 +196,7 @@ input {
 
 footer {
     padding: 30px;
-    width: 100vw;
+    width: auto;
     height: 14vh;
     background: #00995d;
     color: white;

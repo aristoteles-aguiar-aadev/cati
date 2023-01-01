@@ -18,53 +18,49 @@
             </div>
         </div>
     </header>
-    <h1>
 
-    </h1>
     <main>
+
         <!-----1ª parte do formulario----->
         <form>
             <div class="container">
 
-                <fieldset class="field">
+                <div class="field">
 
-                    <div class="entry">
-
-                        <label>
-                            <input type="radio" name="entry-assest" class="entryInput">
-                        </label>
+                    <div class="entrada">
+                        <input type="radio" name="entry-assest" class="entryInput">
                         <label>Entrada</label>
                     </div>
 
-                    <div class="entry">
-
-                        <label>
-                            <input type="radio" name="exit-assest" class="entryInput">
-                        </label>
+                    <div class="saida">
+                        <input type="radio" name="exit-assest" class="entryInput">
                         <label>Saida</label>
-
                     </div>
-                </fieldset>
+
+                </div>
 
                 <!-----2ª parte do formulario----->
 
                 <div class="interfaceForm">
+                    
                     <div class="cabecalho">
                         <h1 id="titulo">CATI - Cadastro de Ativos e Bens</h1>
                     </div>
 
-                    <form>
-                        <div class="masterContainer">
-                            <fieldset class="field1">
-                                <div class="campo">
-                                    <label class="codigo">
-                                        <b>Codigo</b>
-                                    </label>
 
-                                    <label>
-                                        <input type="text" name="codigo" class="inputCodigo">
-                                    </label>
-                                </div>
+                    <div class="masterContainer">
+                        <div class="field1">
+                            <div class="campo">
+                                <label class="codigo">
+                                    <b>Codigo</b>
+                                </label>
+
+                                <label>
+                                    <input type="text" name="codigo" class="inputCodigo" placeholder="Codigo">
+                                </label>
+                            </div>
+
+                            <div class="treeclass">
 
                                 <div class="campo">
 
@@ -73,7 +69,8 @@
                                     </label>
 
                                     <label>
-                                        <input type="text" name="ticket" class="inputTicket">
+                                        <input type="text" placeholder="Digite o ticket" name="ticket"
+                                            class="inputTicket">
                                     </label>
                                 </div>
 
@@ -84,7 +81,7 @@
                                     </label>
 
                                     <label>
-                                        <input type="text" name="tombo" class="inputTombo">
+                                        <input type="text" placeholder="Digite o tombo" name="tombo" class="inputTombo">
                                     </label>
                                 </div>
 
@@ -94,44 +91,47 @@
                                     </label>
 
                                     <label>
-                                        <input type="text" name="hostname">
+                                        <input type="text" placeholder="Digite o hostname" name="hostname"
+                                            class="inputHostname">
                                     </label>
                                 </div>
+                            </div>
 
+                            <div class="campo">
+                                <label>
+                                    Equipamento / Modelo
+                                </label>
 
-                                <div class="campo">
-                                    <label>
-                                        Equipamento / Modelo
-                                    </label>
+                                <input class="equipamento" type="text" name="equipamento"
+                                    placeholder="Digite aqui a descrição">
 
-                                    <input class="equipamento" type="text" name="equipamento"
-                                        placeholder="Digite aqui a descrição">
+                            </div>
 
-                                </div>
+                            <div class="campo">
+                                <label>
+                                    Acessórios
+                                </label>
 
-                                <div class="campo">
-                                    <label>
-                                        Acessórios
-                                    </label>
+                                <input type="text" name="acessorios" placeholder="Digite o nome do acessorios">
 
-                                    <input type="text" name="acessorios" placeholder="Digite o nome do acessorios">
+                            </div>
 
-                                </div>
+                            <div class="campo">
+                                <label>
+                                    Fornecedor / Origem
+                                </label>
 
-                                <div class="campo">
-                                    <label>
-                                        Fornecedor / Origem
-                                    </label>
+                                <input type="text" name="fornecedor" placeholder="Digite o nome do fornecedor">
+                            </div>
 
-                                    <input type="text" name="fornecedor" placeholder="Digite o nome do Fornecedor">
-                                </div>
-
+                            <div class="treeclass">
                                 <div class="campo">
                                     <label>
                                         Usuário
                                     </label>
 
-                                    <input type="text" name="usuario" placeholder="Digite o nome do usuario">
+                                    <input type="text" name="usuario" placeholder="Digite o nome do usuario"
+                                        class="userUseradmin">
                                 </div>
 
                                 <div class="campo">
@@ -140,29 +140,50 @@
                                         Usuário Administrador
                                     </label>
 
-                                    <input type="text" name="usuarioAdmin"
-                                        placeholder="Digite o nome do administrador local">
+                                    <input type="text" name="usuarioAdmin" placeholder="Administrador local"
+                                        class="userUseradmin">
                                 </div>
-                            </fieldset>
+                            </div>
 
-                            <fieldset class="field2">
+                        </div>
+
+                        <fieldset class="field2">
+
+                            <div class="campo">
+                                <label>
+                                    Tecnico Responsavel
+                                </label>
+
+                                <select id="tecnico" name="tecnico">
+                                    <option value="aa">Aristoteles Aguiar</option>
+                                    <option value="ds">Diego Souza</option>
+                                    <option value="jb">Jonatas Barroso</option>
+                                    <option value="lm">Larissa Magalhães</option>
+                                </select>
+                            </div>
+
+
+                            <div class="campo">
+                                <label>
+                                    Sist. Operacional
+                                </label>
+
+                                <select id="so" name="operacional">
+                                    <option value="win7">Windows 7</option>
+                                    <option value="win8">Windows 8</option>
+                                    <option value="win10">Windows 10</option>
+                                    <option value="win11">Windows 11</option>
+                                    <option value="winsrv">Windows Server</option>
+                                    <option value="lin">Linux</option>
+                                    <option value="mac">Mac iOS</option>
+                                </select>
+                            </div>
+
+                            <div class="treeclass1">
 
                                 <div class="campo">
                                     <label>
-                                        Tecnico Responsavel
-                                    </label>
-
-                                    <select id="tecnico" name="tecnico">
-                                        <option value="aa">Aristoteles Aguiar</option>
-                                        <option value="ds">Diego Souza</option>
-                                        <option value="jb">Jonatas Barroso</option>
-                                        <option value="lm">Larissa Magalhães</option>
-                                    </select>
-                                </div>
-
-                                <div class="campo">
-                                    <label>
-                                        Ingressado no Dominio
+                                        Dominio
                                     </label>
 
                                     <select id="dominio" name="dominio" class="dom">
@@ -171,25 +192,10 @@
                                     </select>
                                 </div>
 
-                                <div class="campo">
-                                    <label>
-                                        Sistema Operacional
-                                    </label>
-
-                                    <select id="so" name="operacional">
-                                        <option value="win7">Windows 7</option>
-                                        <option value="win8">Windows 8</option>
-                                        <option value="win10">Windows 10</option>
-                                        <option value="win11">Windows 11</option>
-                                        <option value="winsrv">Windows Server</option>
-                                        <option value="lin">Linux</option>
-                                        <option value="mac">Mac iOS</option>
-                                    </select>
-                                </div>
 
                                 <div class="campo">
                                     <label>
-                                        Instalado SO
+                                        Inst SO
                                     </label>
 
                                     <select id="insSO" name="insSO">
@@ -200,7 +206,7 @@
 
                                 <div class="campo">
                                     <label>
-                                        Atualizado SO
+                                        Atual SO
                                     </label>
 
                                     <select id="atualSO" name="atualSO">
@@ -208,68 +214,72 @@
                                         <option value="not">Não</option>
                                     </select>
                                 </div>
+                            </div>
 
-                                <div class="campo">
-                                    <label>
-                                        Setor do Usuário
-                                    </label>
 
-                                    <select id="setorUsuario" name="setorUsuario">
-                                        <option>Administração</option>
-                                        <option>Atenção Primaria</option>
-                                        <option>Atendimento</option>
-                                        <option>AIS/SAD</option>
-                                        <option>Auditoria e Regulação</option>
-                                        <option>Cadastro</option>
-                                        <option>Central de Atendimento</option>
-                                        <option>Comercial</option>
-                                        <option>Contabilidade</option>
-                                        <option>Contas Medicas</option>
-                                        <option>CSPAR</option>
-                                        <option>Diretoria</option>
-                                        <option>Financeiro</option>
-                                        <option>Gerencia</option>
-                                        <option>Gestão de Pessoas</option>
-                                        <option>Juridico</option>
-                                        <option>NANS</option>
-                                        <option>Ouvidoria</option>
-                                        <option>Inovações</option>
-                                        <option>Rede Assistencial</option>
-                                        <option>Relacionamento Empresarial</option>
-                                        <option>Tecnologia da Informação</option>
-                                        <option>Vendas</option>
-                                    </select>
 
-                                </div>
+                            <div class="campo">
+                                <label>
+                                    Setor do Usuário
+                                </label>
 
-                                <div class="campo">
-                                    <label>Unidade de Destino</label>
+                                <select class="setorUsuario" name="setorUsuario">
+                                    <option>Administração</option>
+                                    <option>Atenção Primaria</option>
+                                    <option>Atendimento</option>
+                                    <option>AIS/SAD</option>
+                                    <option>Auditoria e Regulação</option>
+                                    <option>Cadastro</option>
+                                    <option>Central de Atendimento</option>
+                                    <option>Comercial</option>
+                                    <option>Contabilidade</option>
+                                    <option>Contas Medicas</option>
+                                    <option>CSPAR</option>
+                                    <option>Diretoria</option>
+                                    <option>Financeiro</option>
+                                    <option>Gerencia</option>
+                                    <option>Gestão de Pessoas</option>
+                                    <option>Juridico</option>
+                                    <option>NANS</option>
+                                    <option>Ouvidoria</option>
+                                    <option>Inovações</option>
+                                    <option>Rede Assistencial</option>
+                                    <option>Relacionamento Empresarial</option>
+                                    <option>Tecnologia da Informação</option>
+                                    <option>Vendas</option>
+                                </select>
 
-                                    <select>
-                                        <option>Unimed Ceará</option>
-                                        <option>Unimed Abolição</option>
-                                        <option>Unimed Aracati</option>
-                                        <option>Unimed Cariri</option>
-                                        <option>Unimed Centro Sul</option>
-                                        <option>Unimed Crateus</option>
-                                        <option>Unimed Nordeste</option>
-                                        <option>Unimed Sertao Central</option>
-                                        <option>Unimed Sobral</option>
-                                        <option>Unimed Vale do Jaguaribe</option>
-                                        <option>CSPAR</option>
-                                    </select>
+                            </div>
 
-                                </div>
-                                <div class="campo">
-                                    <label>
-                                        Data
-                                    </label>
-                                    <label>
-                                        <input type="date">
-                                    </label>
-                                </div>
-                            </fieldset>
-                        </div>
+                            <div class="campo">
+                                <label>Unidade de Destino</label>
+
+                                <select class="unDestino">
+                                    <option>Unimed Ceará</option>
+                                    <option>Unimed Abolição</option>
+                                    <option>Unimed Aracati</option>
+                                    <option>Unimed Cariri</option>
+                                    <option>Unimed Centro Sul</option>
+                                    <option>Unimed Crateus</option>
+                                    <option>Unimed Nordeste</option>
+                                    <option>Unimed Sertao Central</option>
+                                    <option>Unimed Sobral</option>
+                                    <option>Unimed Vale do Jaguaribe</option>
+                                    <option>CSPAR</option>
+                                </select>
+                            </div>
+
+
+
+                            <div class="campo">
+                                <label>
+                                    Data
+                                </label>
+                                <label>
+                                    <input type="date">
+                                </label>
+                            </div>
+                        </fieldset>
 
                         <div class="campo">
                             <label class="observacaoTextArea">
@@ -281,8 +291,8 @@
                             </label>
                         </div>
 
-                        <div class="btn-master">
 
+                        <div class="btn-master">
                             <div class="campo">
                                 <input type="submit" value=" Salvar " class="btn">
                             </div>
@@ -290,13 +300,14 @@
                             <div class="campo">
                                 <input type="reset" value=" Redefinir" class="btn">
                             </div>
-
                         </div>
 
-                    </form>
+                    </div>
+
                 </div>
             </div>
         </form>
+
     </main>
 
     <footer>
@@ -304,7 +315,7 @@
             <h4>Unimed Ceará - 2022 - Todos os direitos reservados</h4>
             <br>
             <h6>Desenvolvido por: Aristoteles Aguiar</h6>
-            
+
         </div>
     </footer>
 </body>
